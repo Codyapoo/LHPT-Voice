@@ -1,0 +1,223 @@
+/* ==========================================================================
+   LHPT Voice v2.0 - Production Stylesheet (Master Prompt Specification)
+   Brand Identity Palette:
+   - Primary:   #00E5FF (Neon Cyan)
+   - Secondary: #7C3AED (Deep Violet)
+   - Accent:    #A855F7 (Vibrant Purple)
+   - Dark:      #080B20 (Deep Cosmic Dark)
+   - Surface:   #121A3A (Cosmic Card Surface)
+   - Text:      #E8F0FF (Ice White)
+   - Muted:     #8DA4C5 (Muted Slate Blue)
+   Fonts: 'Be Vietnam Pro', 'Inter', sans-serif
+   ========================================================================== */
+
+:root {
+  --c-primary: #00E5FF;
+  --c-secondary: #7C3AED;
+  --c-accent: #A855F7;
+  --c-dark: #080B20;
+  --c-surface: #121A3A;
+  --c-surface-elevated: #17224B;
+  --c-text: #E8F0FF;
+  --c-text-muted: #8DA4C5;
+  --border-glow: rgba(0, 229, 255, 0.25);
+  --border-subtle: rgba(232, 240, 255, 0.1);
+}
+
+html.light-theme {
+  --c-dark: #F0F5FF;
+  --c-surface: #FFFFFF;
+  --c-surface-elevated: #F8FAFC;
+  --c-text: #0F172A;
+  --c-text-muted: #475569;
+  --border-glow: rgba(124, 58, 237, 0.3);
+  --border-subtle: rgba(15, 23, 42, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 229, 255, 0.35) rgba(8, 11, 32, 0.6);
+}
+
+html, body {
+  background-color: var(--c-dark);
+  color: var(--c-text);
+  font-family: 'Be Vietnam Pro', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.font-script {
+  font-family: 'Caveat', cursive;
+}
+
+/* Cosmic Glassmorphism Panels */
+.cosmic-panel {
+  background: linear-gradient(155deg, rgba(18, 26, 58, 0.90) 0%, rgba(8, 11, 32, 0.95) 100%);
+  border: 1px solid rgba(0, 229, 255, 0.22);
+  box-shadow: 0 12px 40px -10px rgba(0, 0, 0, 0.68), 0 0 24px -4px rgba(0, 229, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+html.light-theme .cosmic-panel {
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.96) 0%, rgba(240, 245, 255, 0.98) 100%);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  box-shadow: 0 12px 32px -8px rgba(15, 23, 42, 0.08);
+}
+
+html.light-theme .text-white {
+  color: #0F172A !important;
+}
+
+html.light-theme .text-slate-100,
+html.light-theme .text-slate-200 {
+  color: #1E293B !important;
+}
+
+html.light-theme .text-slate-300,
+html.light-theme .text-slate-400 {
+  color: #475569 !important;
+}
+
+.cosmic-card {
+  background: rgba(18, 26, 58, 0.72);
+  border: 1px solid rgba(232, 240, 255, 0.1);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.light-theme .cosmic-card {
+  background: rgba(248, 250, 252, 0.92);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.cosmic-card:hover {
+  border-color: rgba(0, 229, 255, 0.45);
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.14);
+}
+
+.cosmic-card-active {
+  background: linear-gradient(90deg, rgba(0, 229, 255, 0.16) 0%, rgba(124, 58, 237, 0.20) 100%);
+  border: 1.5px solid #00E5FF !important;
+  box-shadow: 0 0 20px rgba(0, 229, 255, 0.24);
+}
+
+/* Gradients & Text Effects */
+.text-gradient-lhpt {
+  background: linear-gradient(90deg, #00E5FF 0%, #38BDF8 35%, #7C3AED 70%, #A855F7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(90deg, #22D3EE 0%, #00E5FF 50%, #60A5FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-gradient-lhpt {
+  background: linear-gradient(90deg, #00E5FF 0%, #3B82F6 45%, #7C3AED 80%, #A855F7 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 22px rgba(0, 229, 255, 0.35), 0 2px 10px rgba(124, 58, 237, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-gradient-lhpt:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 28px rgba(0, 229, 255, 0.55), 0 4px 14px rgba(168, 85, 247, 0.45);
+  filter: brightness(1.06);
+}
+
+.btn-gradient-lhpt:active {
+  transform: translateY(0);
+}
+
+.btn-cyan-export {
+  background: linear-gradient(135deg, #00E5FF 0%, #0284C7 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+}
+
+.btn-purple-export {
+  background: linear-gradient(135deg, #3B82F6 0%, #7C3AED 60%, #A855F7 100%);
+  color: #FFFFFF !important;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.35);
+}
+
+/* Custom Range Sliders */
+input[type="range"].lhpt-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #00E5FF 0%, #3B82F6 60%, #1E293B 100%);
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"].lhpt-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #E8F0FF;
+  border: 3px solid #00E5FF;
+  box-shadow: 0 0 10px #00E5FF;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].lhpt-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Animated Soundwave Bars */
+@keyframes wavePulse {
+  0%, 100% { transform: scaleY(0.35); opacity: 0.75; }
+  50% { transform: scaleY(1); opacity: 1; }
+}
+
+.wave-bar-anim {
+  transform-origin: center;
+  animation: wavePulse 1.6s ease-in-out infinite;
+}
+
+/* Respect prefers-reduced-motion per Section 7 */
+@media (prefers-reduced-motion: reduce) {
+  .wave-bar-anim {
+    animation: none !important;
+  }
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Phone Mockup Frame */
+.phone-frame {
+  background: #080B20;
+  border: 6px solid #1E293B;
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 28px rgba(0, 229, 255, 0.18), inset 0 0 12px rgba(0, 229, 255, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle Starfield Backdrop */
+.cosmic-bg-stars {
+  background-image:
+    radial-gradient(1.5px 1.5px at 15% 20%, rgba(0, 229, 255, 0.7) 50%, transparent 100%),
+    radial-gradient(1px 1px at 45% 75%, rgba(232, 240, 255, 0.5) 50%, transparent 100%),
+    radial-gradient(2px 2px at 80% 15%, rgba(168, 85, 247, 0.65) 50%, transparent 100%),
+    radial-gradient(1px 1px at 65% 45%, rgba(0, 229, 255, 0.5) 50%, transparent 100%),
+    radial-gradient(1.5px 1.5px at 25% 85%, rgba(124, 58, 237, 0.6) 50%, transparent 100%);
+}

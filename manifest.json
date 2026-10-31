@@ -1,0 +1,16 @@
+{
+  "name": "LHPT Voice — Biến mọi văn bản thành giọng nói",
+  "short_name": "LHPT Voice",
+  "description": "Nền tảng chuyển văn bản thành giọng nói tiếng Việt miễn phí, xuất file WAV/MP3 thực tế.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080B20",
+  "theme_color": "#00E5FF",
+  "icons": [
+    {
+      "src": "public/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

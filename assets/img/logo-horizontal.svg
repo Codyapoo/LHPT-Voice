@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="lhptHorizGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="34" width="4" height="12" rx="2" fill="#00E5FF"/>
+  <rect x="15" y="26" width="4" height="28" rx="2" fill="#00E5FF"/>
+  <path d="M23 20C23 17.7909 24.7909 16 27 16C29.2091 16 31 17.7909 31 20V50H39V58H29C25.6863 58 23 55.3137 23 52V20Z" fill="#00E5FF"/>
+  <rect x="37" y="11" width="7.5" height="58" rx="3.75" fill="url(#lhptHorizGrad)"/>
+  <rect x="44" y="35" width="11" height="7.5" rx="3.75" fill="url(#lhptHorizGrad)"/>
+  <rect x="52" y="18" width="7.5" height="44" rx="3.75" fill="url(#lhptHorizGrad)"/>
+  <rect x="64" y="28" width="4" height="24" rx="2" fill="#7C3AED"/>
+  <rect x="71" y="34" width="4" height="12" rx="2" fill="#A855F7"/>
+  <text x="88" y="50" fill="#E8F0FF" font-family="Be Vietnam Pro, Inter, sans-serif" font-weight="800" font-size="30" letter-spacing="0.5">LHPT</text>
+  <text x="176" y="50" fill="url(#lhptHorizGrad)" font-family="Be Vietnam Pro, Inter, sans-serif" font-weight="800" font-size="30" letter-spacing="0.5">Voice</text>
+</svg>

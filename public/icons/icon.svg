@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <defs>
+    <linearGradient id="lhptIconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="55%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="80" height="80" rx="20" fill="#121A3A" stroke="#00E5FF" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="14" y="34" width="4" height="12" rx="2" fill="#00E5FF"/>
+  <path d="M22 24C22 21.7909 23.7909 20 26 20C28.2091 20 30 21.7909 30 24V48C30 49.1046 30.8954 50 32 50H38V58H30C25.5817 58 22 54.4183 22 50V24Z" fill="#00E5FF"/>
+  <rect x="36" y="15" width="7.5" height="50" rx="3.75" fill="url(#lhptIconGrad)"/>
+  <rect x="43" y="36" width="11" height="7.5" rx="3.75" fill="url(#lhptIconGrad)"/>
+  <rect x="51" y="21" width="7.5" height="38" rx="3.75" fill="url(#lhptIconGrad)"/>
+  <rect x="63" y="32" width="4" height="16" rx="2" fill="#A855F7"/>
+</svg>
